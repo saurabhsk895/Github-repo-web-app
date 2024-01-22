@@ -1,41 +1,46 @@
-# GitHub User Repository Viewer
+# GitHub Repository Web App
 
 ## Overview
 
-This web application allows users to view repositories of a GitHub user by entering their username. It utilizes the GitHub API to fetch user details and repositories dynamically.
+This web application allows you to fetch and display repositories of a GitHub user. It provides a user-friendly interface to explore a user's profile, repositories, and pagination features.
 
 ## Features
 
-1. **User Profile Display:**
-   - Upon entering a GitHub username and clicking the "Get Repositories" button, the application fetches and displays the user's profile information, including their avatar, name, bio, and location.
+- **Profile Information:** View the user's avatar, name, bio, and location.
 
-2. **Repository Listing:**
-   - The application fetches the repositories of the specified GitHub user and displays them in a clean card-based layout. Each card includes the repository name, description, and a list of programming languages used.
+- **Repositories:** Fetch and display the repositories of a GitHub user with details like repository name, description, and programming languages used.
 
-3. **Dynamic Pagination:**
-   - The repositories are paginated to enhance user experience. The app dynamically adjusts the pagination based on the total number of repositories, ensuring an efficient and user-friendly browsing experience.
+- **Pagination:** Navigate through the user's repositories using pagination controls.
 
-## Why GitHub API?
 
-The GitHub API is utilized to access information about a GitHub user and their repositories in a programmatic way. This allows the application to dynamically fetch and display up-to-date data directly from GitHub. The API is crucial for real-time information retrieval, ensuring users get the latest details without the need for manual updates.
+### Instructions
 
-## How to Use
+1. Clone the repository to your local machine:
 
-1. Enter the GitHub username in the provided input field.
-2. Click the "Get Repositories" button.
-3. Explore the displayed user profile and repositories.
+    ```bash
+    git clone https://github.com/saurabhsk895/Github-repo-web-app.git
+    ```
 
-## Technologies Used
+2. Navigate to the project directory:
 
-- HTML
-- CSS (Bootstrap for styling)
-- JavaScript
-- GitHub API
+    ```bash
+    cd Github-repo-web-app
+    ```
 
-## Notes
+3. Open the `script.js` file in a code editor.
 
-- This application is built as part of an assignment and serves as a simple GitHub repository viewer.
-- The use of the GitHub API requires a valid personal access token for authentication.
-- Pagination is implemented to manage large sets of repositories effectively.
+4. Locate the following line:
 
-Feel free to explore, contribute, and enhance this application for more advanced features!
+    ```script.js
+    const accessToken = 'YOUR_PERSONAL_ACCESS_TOKEN'; 
+    ``` (at lines 6 and 102),
+
+5. Replace `'YOUR_PERSONAL_ACCESS_TOKEN'` with your GitHub Personal Access Token. You can generate a token [here](https://github.com/settings/tokens).
+
+6. Save the changes.
+
+### Notes
+
+- The application uses Bootstrap for styling, jQuery for DOM manipulation, and the GitHub API for fetching user data and repositories.
+
+- Ensure that your Personal Access Token has the necessary permissions to access public user information.

@@ -3,7 +3,7 @@ let currentPage = 1;
 
 function getRepository() {
   const username = document.getElementById('username').value;
-  const accessToken = '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'; // personal access token
+  const accessToken = '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'; // personal access token
   
   document.getElementById('loader').style.display = 'block';
 
@@ -99,7 +99,7 @@ function displayRepositories(repos) {
 }
 
 function fetchLanguages(owner, repoName) {
-  const accessToken = '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'; // Personal access token
+  const accessToken = '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'; // Personal access token
 
   fetch(`https://api.github.com/repos/${owner}/${repoName}/languages`, {
     headers: {
